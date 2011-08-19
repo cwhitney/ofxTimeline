@@ -87,6 +87,7 @@ void ofxTLKeyframer::draw(){
 	ofSetColor(100, 0, 0);
 	//**** DRAW KEYFRAME LINES
 	ofNoFill();
+    
 	ofBeginShape();
 	for(int p = 0; p <= bounds.width; p++){
 		ofVertex(bounds.x + p,  bounds.y + bounds.height - sampleTimelineAt(ofMap(p, 0, bounds.width, zoomBounds.min, zoomBounds.max, true)) * bounds.height);

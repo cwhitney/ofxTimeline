@@ -200,13 +200,14 @@ void ofxTimeline::recalculateBoundingRects(){
 void ofxTimeline::draw(){
 		
 	ticker->draw();
-	
+    zoomer->draw();
+    
 	for(int i = 0; i < headers.size(); i++){
 		headers[i]->draw();
 		elements[headers[i]->name]->draw();
 	}
 	
-	zoomer->draw();
+	
 }
 
 void ofxTimeline::loadElementPositions(){
